@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; font-src 'self'; style-src 'sha256-jcIzXaeSbGrf7MaT8QPoNjzVIU/P42snFx51gAngl7U='; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floor Fiend: the platformer that lies to you</title>
+<meta name="description" content="Floor Fiend is a troll platformer for Android: 75 levels of floors, doors and spikes that lie to you.">
+<meta property="og:title" content="Floor Fiend: the platformer that lies to you">
+<meta property="og:description" content="Floor Fiend is a troll platformer for Android: 75 levels of floors, doors and spikes that lie to you.">
+<meta property="og:image" content="https://floorfiend.github.io/map.jpg">
+<style>
+@font-face { font-family: Fredoka; src: url(Fredoka.ttf); font-display: swap; }
+:root { --sky1: #2a0f4a; --sky2: #6a2a6a; --sun: #ff6a3d; --sand: #f0b860; --rock: #9a5238; --ink: #f6eee2;
+  --dim: #d9c4c9; --gold: #ffd166; --teal: #3ff0d0; --card: rgba(26, 8, 34, 0.72); }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); font: 17px/1.6 Fredoka, system-ui, sans-serif;
+  background: linear-gradient(180deg, var(--sky1) 0%, var(--sky2) 40%, #b0444a 80%, var(--sun) 100%) fixed; }
+a { color: var(--gold); }
+main { max-width: 860px; margin: 0 auto; padding: 32px 16px 56px; }
+header.hero { text-align: center; padding: 24px 0 8px; }
+h1 { font-size: clamp(44px, 9vw, 76px); line-height: 1; margin: 0 0 8px; color: var(--gold);
+  text-shadow: 0 4px 0 #7a1a2a, 0 0 28px rgba(255, 122, 26, 0.55); letter-spacing: 1px; }
+.tag { font-size: 20px; color: var(--dim); margin: 0 0 20px; }
+.btn { display: inline-block; padding: 12px 22px; border-radius: 12px; background: var(--rock); color: var(--ink);
+  text-decoration: none; border-bottom: 4px solid #6e3426; font-size: 18px; }
+.btn.soon { background: #4a2a4a; border-color: #2a1430; color: var(--dim); }
+.shots { display: grid; gap: 14px; margin: 28px 0; }
+.shots img { width: 100%; border-radius: 14px; display: block; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45); }
+.card { background: var(--card); border-radius: 16px; padding: 20px 22px; margin: 18px 0; }
+.card h2 { margin-top: 0; color: var(--sand); }
+ul.traps { columns: 2; padding-left: 20px; margin: 0; }
+footer { text-align: center; color: var(--dim); font-size: 15px; margin-top: 36px; }
+footer a { margin: 0 8px; }
+article.doc { background: var(--card); border-radius: 16px; padding: 24px 26px; }
+article.doc h1 { font-size: 36px; text-shadow: none; }
+article.doc h2 { color: var(--sand); font-size: 22px; margin: 26px 0 6px; }
+.back { display: inline-block; margin-bottom: 14px; }
+@media (max-width: 560px) { ul.traps { columns: 1; } body { font-size: 16px; } }
+</style>
+</head>
+<body><main>
+<header class="hero">
+  <h1>Floor Fiend</h1>
+  <p class="tag">The floor is lying. The door is lying. Everything is lying.</p>
+  <span class="btn soon">Coming soon to Google Play</span>
+</header>
+<section class="shots">
+  <img src="map.jpg" alt="The world map: a winding road of gates across a volcanic plain, ending at a giant skull" loading="lazy">
+  <img src="level.jpg" alt="A level: a red demon on sandstone platforms, a row of spikes and a glowing exit gate" loading="lazy">
+</section>
+<section class="card">
+  <h2>A platformer that hates you (affectionately)</h2>
+  <p>Run, jump, reach the door. Simple, right? Every level has three stages, every stage has traps that wait
+  for the exact moment you trust them, and one death sends you back to the start of the stage.
+  Your blood stays on the floor so you never forget where you fell.</p>
+  <ul class="traps">
+    <li>Floors that vanish under your feet</li><li>Spikes that pop up late</li>
+    <li>Doors that run away</li><li>Springs you shouldn't trust</li>
+    <li>Ceilings that fall</li><li>Blocks that appear from nowhere</li>
+    <li>Controls that flip</li><li>Walls of spikes that chase you</li>
+  </ul>
+</section>
+<section class="card">
+  <h2>Five worlds of lies</h2>
+  <p>75 hand-made levels across five volcanic worlds, a boss at the end of every road, Google Play Games
+  achievements (plus some very rude in-game ones), and cloud save so your progress follows you to a new phone.</p>
+</section>
+
+<footer>
+  <a href="index.html">Home</a> <a href="privacy-policy.html">Privacy Policy</a> <a href="terms.html">Terms of Use</a>
+  <p>Floor Fiend by Ahquaf Hussain · <a href="mailto:ahquaf.dev@gmail.com">ahquaf.dev@gmail.com</a></p>
+</footer>
+</main></body>
+</html>
